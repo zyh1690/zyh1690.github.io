@@ -43,6 +43,7 @@ highlight:
   auto_detect: false
   tab_replace:
 
+# disqus_shortname: https-zyh1690-github-io
 # Category & Tag
 default_category: uncategorized
 category_map:
