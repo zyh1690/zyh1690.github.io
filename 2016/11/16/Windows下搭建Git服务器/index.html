@@ -4,14 +4,53 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>FreeStyle</title>
+  <title>Windows下搭建Git服务器 | FreeStyle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="FreeStyle">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="最近实在忍受不了SVN的各种限制（集中式版本控制，一旦服务器不在线，就无法commit），所以建议项目组长换成Git服务器，也就有了这篇Git服务器搭建文章。
+需要的软件：
+
+JRE
+Gitblit
+
+JRE安装Java运行环境，很简单，网上一搜一大堆，在此不再赘述。
+GitblitWhat is Gitblit?
+Gitblit is an open-source, pure Java stac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows下搭建Git服务器">
+<meta property="og:url" content="http://yoursite.com/2016/11/16/Windows下搭建Git服务器/index.html">
 <meta property="og:site_name" content="FreeStyle">
+<meta property="og:description" content="最近实在忍受不了SVN的各种限制（集中式版本控制，一旦服务器不在线，就无法commit），所以建议项目组长换成Git服务器，也就有了这篇Git服务器搭建文章。
+需要的软件：
+
+JRE
+Gitblit
+
+JRE安装Java运行环境，很简单，网上一搜一大堆，在此不再赘述。
+GitblitWhat is Gitblit?
+Gitblit is an open-source, pure Java stac">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111613322445.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/201611161338337.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614005429.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614050898.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614073420.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614092729.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614174569.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614193557.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614203426.png">
+<meta property="og:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111614240698.png">
+<meta property="og:updated_time" content="2016-11-16T14:39:24.826Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FreeStyle">
+<meta name="twitter:title" content="Windows下搭建Git服务器">
+<meta name="twitter:description" content="最近实在忍受不了SVN的各种限制（集中式版本控制，一旦服务器不在线，就无法commit），所以建议项目组长换成Git服务器，也就有了这篇Git服务器搭建文章。
+需要的软件：
+
+JRE
+Gitblit
+
+JRE安装Java运行环境，很简单，网上一搜一大堆，在此不再赘述。
+GitblitWhat is Gitblit?
+Gitblit is an open-source, pure Java stac">
+<meta name="twitter:image" content="http://www.zyh1690.org/wp-content/uploads/2016/11/2016111613322445.png">
   
     <link rel="alternative" href="/atom.xml" title="FreeStyle" type="application/atom+xml">
   
@@ -139,9 +178,7 @@
 </nav>
 
       <div class="body-wrap">
-        
-  
-    <article id="post-Windows下搭建Git服务器" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Windows下搭建Git服务器" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -150,8 +187,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/16/Windows下搭建Git服务器/">Windows下搭建Git服务器</a>
+    <h1 class="article-title" itemprop="name">
+      Windows下搭建Git服务器
     </h1>
   
 
@@ -206,169 +243,64 @@
   </div>
 </article>
 
-
-
-
-
-
-
-
-
-
   
-    <article id="post-合肥万达乐园游" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/12/合肥万达乐园游/">合肥万达乐园游</a>
-    </h1>
   
+    <a href="/2016/11/12/合肥万达乐园游/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">合肥万达乐园游</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天天气晴朗，和煦的阳光照在我深色的外套上感觉非常的温暖，清澈的天空仿佛能够扫去心中的雾霾，让人清爽。有多久没出去玩了？已然记不太清，整天轻松地过着本应忙碌的日子，已略显颓势，也是时候出去转换下心情了。</p>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/11/12/合肥万达乐园游/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/12/合肥万达乐园游/" class="archive-article-date">
-  	<time datetime="2016-11-12T03:34:28.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-12</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Windows下搭建Git服务器" data-title="Windows下搭建Git服务器" data-url="http://yoursite.com/2016/11/16/Windows下搭建Git服务器/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"Kevin@github"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
-
-  
-    <article id="post-新叶" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/07/新叶/">新页</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>找工作的事终于告一段落了。翻看自己的<a href="http://www.zyh1690.org">网站</a> ，发现已经有四个月没更新了。</p>
-<p>四个月来，从复习知识 -&gt; 找工作 -&gt; 找工作后的放纵，经历了很多，也想了很多，完全没意识到时间居然过了这么久！（又或者自己有意识的去避开思考时间的问题？）</p>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/11/07/新叶/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/07/新叶/" class="archive-article-date">
-  	<time datetime="2016-11-07T05:07:37.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-07</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/18/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/10/18/hello-world/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/10/18/hello-world/" class="archive-article-date">
-  	<time datetime="2016-10-18T07:44:36.286Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-18</time>
-</a>
-      
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-  
 
 
       </div>
@@ -390,8 +322,8 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
